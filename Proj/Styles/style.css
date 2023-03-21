@@ -1,0 +1,13 @@
+h1 {
+    color: #ffbbdc;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+a .navbar-brand {
+    padding: 100px
+}
