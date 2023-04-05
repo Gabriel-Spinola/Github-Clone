@@ -1,4 +1,5 @@
 <?php 
+use Helpers\Router;
 
 /**
  * ==== MVC ====
@@ -34,5 +35,3 @@ spl_autoload_register($autoload);
 // Load Application
 $app = new Application();
 $app -> execute();
-
-?>
