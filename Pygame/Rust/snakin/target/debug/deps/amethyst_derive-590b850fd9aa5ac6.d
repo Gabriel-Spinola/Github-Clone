@@ -1,0 +1,9 @@
+C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\deps\amethyst_derive-590b850fd9aa5ac6.dll: C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\lib.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\event_reader.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\prefab_data.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\system_desc.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\widget_id.rs
+
+C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\deps\amethyst_derive-590b850fd9aa5ac6.d: C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\lib.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\event_reader.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\prefab_data.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\system_desc.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\widget_id.rs
+
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\lib.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\event_reader.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\prefab_data.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\system_desc.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\amethyst_derive-0.15.3\src\widget_id.rs:

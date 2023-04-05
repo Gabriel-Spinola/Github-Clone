@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="pt-br">
 	<head>
 		
@@ -14,7 +14,7 @@
 	</head>	
 	
 	<body>
-		<!--<header>-->
+		<header>
 			<nav class="navbar navbar-light bg-light">
 				<div class="container fluid">
 					<a class="navbar-brand" href="">
@@ -23,7 +23,7 @@
 				</div>
 
 			</nav>
-		<!--</header>-->
+		</header>
 
 		<main class="center">
 			<h1>Wholesome</h1>
@@ -34,3 +34,41 @@
 	</body>
 
 </html>
+-->
+
+<?php 
+
+/**
+ * ==== MVC ====
+ * 
+ * M: MODEL
+ * V: VIEW
+ * C: CONTROLLER
+ * 
+ * ================
+ * 
+ * /Contact Page
+ *  Contact Controller => General Controller Class. (Execute the model and the view).
+ *  Contact View => Render the page.
+ *  Contact Model => Store the required function
+*/
+
+// ===========================
+// Configuration
+const INCLUDE_PATH = 'http://localhost:8080/Proj/';
+const INCLUDE_PATH_VIEW = INCLUDE_PATH . 'Views/Pages/';
+
+// ===========================
+// Autoload
+
+// Include class bases on their name
+$autoload = function(string $class): void {
+	include $class . '.php';
+};
+
+spl_autoload_register($autoload);
+
+// ===========================
+// Load Application
+
+?>

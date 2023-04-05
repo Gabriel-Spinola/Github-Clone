@@ -2,12 +2,12 @@
  * BG: #090c12
  * FG: #f1f1f1
  * Maybe Text: #b5aca0
- * Blue: #4361af
+ * Blue: #1F6FEB
 */
 
 body {
-    background-color: #090c12;
-    color: #c9c1b6;
+    background-color: #010409;
+    color: #F0F6FC;
 }
 
 * {
@@ -21,7 +21,7 @@ body {
 header {
     padding: 0;
     margin: 0;
-    background-color: #3b3c41;
+    background-color: #161B22;
     overflow: hidden;
 }
 
@@ -37,7 +37,12 @@ nav * {
 
 .nav-searchbar {
     float: left;
-    padding: 18px 15px
+    padding: 18px 15px;
+    width: 270px;
+    height: 1px;
+    top: 0;
+    border: #2b2c2e solid 1.5px;
+    background-color: #0d1117;
 }
 
 .navbar-item {
@@ -70,10 +75,10 @@ section.repositories {
     position: fixed;
     z-index: 1;
     left: 0;
-    background-color: #252629;
+    background-color: #0D1117;
     overflow-x: hidden;
     padding-top: auto;
-    border-right: #3b3c41 solid 1.5px;
+    border-right: #2b2c2e solid 1.5px;
 }
 
 div.sidebox {
@@ -93,24 +98,29 @@ div.sidebox {
 
 button#new-repo {
     border-radius: 6px;
-    background-color: #4361af;
+    background-color: #1F6FEB;
     color: white;
     padding: 7px;
     border: none;
 }
 
 .top-repositories h3 {  
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .side-center {
     margin: 0 0 0 50px;
 }
 
-/** Main
- **/
+/** Main **/
 
-main {
+main, footer {
     position: absolute;
     left: 25%;
+}
+
+footer {
+    /*Makes footer go down*/ 
+    bottom: 0;
+    width: 100%;
 }

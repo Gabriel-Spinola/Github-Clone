@@ -1,0 +1,11 @@
+C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\deps\getrandom-cf6e12f383e49eba.rmeta: C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\lib.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\error.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\util.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\error_impls.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\windows.rs
+
+C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\deps\libgetrandom-cf6e12f383e49eba.rlib: C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\lib.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\error.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\util.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\error_impls.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\windows.rs
+
+C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\deps\getrandom-cf6e12f383e49eba.d: C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\lib.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\error.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\util.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\error_impls.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\windows.rs
+
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\lib.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\error.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\util.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\error_impls.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\getrandom-0.2.8\src\windows.rs:

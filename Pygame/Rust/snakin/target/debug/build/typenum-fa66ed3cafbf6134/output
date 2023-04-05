@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\build\typenum-fa66ed3cafbf6134\out\consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\build\typenum-fa66ed3cafbf6134\out\op.rs

@@ -1,0 +1,9 @@
+C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\deps\proc_macro_hack-5fcf2525c9e9f721.dll: C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\lib.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\quote.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\error.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\iter.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\parse.rs
+
+C:\xampp\htdocs\Pygame\Rust\snakin\target\debug\deps\proc_macro_hack-5fcf2525c9e9f721.d: C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\lib.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\quote.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\error.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\iter.rs C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\parse.rs
+
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\lib.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\quote.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\error.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\iter.rs:
+C:\Users\Aluno_Tarde\.cargo\registry\src\github.com-1ecc6299db9ec823\proc-macro-hack-0.5.20+deprecated\src\parse.rs:
