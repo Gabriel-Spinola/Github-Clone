@@ -21,6 +21,11 @@ use Helpers\Router;
 const INCLUDE_PATH = 'http://localhost:8080/Proj/';
 const INCLUDE_PATH_VIEW = INCLUDE_PATH . 'Views/Pages/';
 
+const HOST = 'localhost';
+const DATABASE = 'PLACEHOLDER';
+const USER = 'root';
+const PASSWORD = '';
+
 // ===========================
 // Autoload
 
