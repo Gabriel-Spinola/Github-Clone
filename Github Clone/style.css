@@ -182,22 +182,58 @@ button#new-repo:hover {
 
 /** Main **/
 
+main, footer {
+    width: 48%;
+    position: relative;
+    left: 24%;
+}
+
 section.campus {
     margin: 2vh 0;
-    height: 20%;
     border-radius: 8px;
     padding: 30px 25px;
 }
 
-section.campus img {
-    max-width: 60%;
+section.campus h3 {
+    margin-bottom: 8px;
+    font-style: normal;
 }
 
-main, footer {
-    width: 45%;
-    position: absolute;
-    left: 24%;
+section.campus article {
+    line-height: 1.5;
+    font-size: 14.5px;
+    color: #919292;
+    margin-bottom: 2vh;
+} 
+
+section.campus button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: #2b2c2e;
+    color: white;
+    border: #3f4042 solid 1.5px;
 }
+
+section.campus button:hover {
+    cursor: pointer;
+    background-color: #3e4042;
+    border: #555658 solid 1.5px;
+}
+
+section.campus img {
+    max-width: 100%;
+}
+
+/** Right **/
+
+aside.latest-changes {
+    position: absolute;
+    left: 76%;
+    width: 24%;
+    top: 12%;
+}
+
+/** Footer **/
 
 footer {
     /*Makes footer go down*/ 
