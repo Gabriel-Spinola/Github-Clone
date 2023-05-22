@@ -16,7 +16,7 @@
             <nav class="topnav">
                 <a id="github-logo"><img src="Assets/logo.png" alt="" width="50px"></a>
 
-                <div class="nav-searchbar">
+                <div class="nav-searchbar border-default">
                     <p>Search or jump to...</p>
                 </div>
 
@@ -32,42 +32,47 @@
             </nav>
         </header>
 
-        <section class="repositories">
+        <aside class="repositories">
             <div class="sidebox">
                 <div class="top-repositories">
                     <h3>Top Repositories</h3>
-                    <button id="new-repo"><strong>@IC New</strong></button>
+                    <button id="new-repo" type="button"><strong>@IC New</strong></button>
 
-                    <div class="search-bar side-center"><p>Find a repository...</p></div>
+                    <!--Should be a input field-->
+                    <input class="search-bar border-default" type="text" placeholder="Find a repository..."></input>
 
-                    <ul class="repositories-list side-center">
-                        <li><a>Gabriel-Spinola/Repo1</a></li>
-                        <li><a>Gabriel-Spinola/Repo2</a></li>
-                        <li><a>Gabriel-Spinola/Repo3</a></li>
-                        <li><a>Gabriel-Spinola/Repo4</a></li>
+                    <ul class="repositories-list">
+                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo1</a></li>
+                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo2</a></li>
+                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo3</a></li>
+                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo4</a></li>
+                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo5</a></li>
+                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo6</a></li>
+                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo7</a></li>
                     </ul>
-                    <a href="#">Show more</a>
+                    <a id="show-more" href="#">Show more</a>
                 </div>
 
                 <div class="recent-activity ">
                     <h3>Recent activity</h3>
-                    <div class="rc-border">
+                    <div class="rc-border border-default">
                         <p>When you take actions across Github, we'll provide links to that activity here.</p>
                     </div>
                 </div>
             
             </div>
-        </section>
+        </aside>
         
         <main>
-            <section class="campus">
+            <section class="campus border-default">
                 <h3>Join GitHub Global Campus!</h3>
                 <article>
                     Prepare for a career in tech by joining GitHub Global Campus. Global Campus will help you get the practical
                     industry knowledge you need by giving you access to industry tools, events, learning
                     resources and a growing student community.
                 </article>
-                <img id="campus-img">
+                <img src="./Assets/gc_banner_dark.png" id="campus-img">
+                <button type="button">Join Global Campus</button>
             </section>
 
             <section class="right-sec">
