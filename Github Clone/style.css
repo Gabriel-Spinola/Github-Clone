@@ -22,6 +22,7 @@ body {
 
 /** Navbar **/
 
+/* Header is not fixed, the height should change */
 header {
     padding: 0;
     margin: 0;
@@ -74,7 +75,7 @@ nav * {
 
 aside.repositories {
     height: 100%;
-    width: 21%;
+    width: 22%;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -191,7 +192,7 @@ main, footer {
 section.campus {
     margin: 2vh 0;
     border-radius: 8px;
-    padding: 30px 25px;
+    padding: 30px 25px 15px 25px;
 }
 
 section.campus h3 {
@@ -224,6 +225,35 @@ section.campus img {
     max-width: 100%;
 }
 
+section.feed {
+    margin: 2vh 0;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #0D1117;
+}
+
+section.feed h3 {
+    font-size: 13.5px;
+    margin-bottom: 8px;
+    color: #a8a8a8;
+}
+
+section.feed article {
+    font-size: 14px;
+    color: #a8a8a8;
+    margin-bottom: 10px;
+}
+
+section.feed a {
+    text-decoration: none;
+    color: #5e8ccf;
+    font-size: 14px;
+}
+
+section.feed a:hover {
+    text-decoration: underline;
+}
+
 /** Right **/
 
 aside.latest-changes {
@@ -232,6 +262,40 @@ aside.latest-changes {
     width: 24%;
     top: 12%;
 }
+
+.latest-changes h3 {
+    font-size: 13.5px;
+    margin-bottom: 8px;
+    color: #a8a8a8;
+}
+
+.lc-list {
+    margin-bottom: 1vh;
+}
+
+.lc-list li {
+    margin-bottom: 10px;
+}
+
+.lc-list a {
+    font-size: 14px;
+    color: #d6d5d5;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+
+.lc-list p {
+    font-size: 12px;
+    color: #919292;
+    padding-bottom: 4px;
+}
+
+.latest-changes a#view-changelog {
+    text-decoration: none;
+    color: #919292;
+    font-size: 13px;
+}
+
 
 /** Footer **/
 
