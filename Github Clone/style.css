@@ -329,9 +329,23 @@ footer {
 }
 
 .footer-links ul {
-    font-size: 13px;
+    font-size: 12.5px;
     color: #7b7c7e;
     list-style: none;   
+}
+
+.footer-links li {
+    padding: 5px 0; 
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #6c95d3;
 }
 
 .footer-links .ft-link {
