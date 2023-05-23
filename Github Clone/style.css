@@ -24,10 +24,9 @@ body {
 
 /* Header is not fixed, the height should change */
 header {
-    padding: 0;
-    margin: 0;
     background-color: #161B22;
     overflow: hidden;
+
 }
 
 nav * {
@@ -37,16 +36,20 @@ nav * {
 #github-logo {
     float: left;
     padding-left: 15px;
-    padding-top: 2px;
+    font-size: 40px;
 }
 
 .nav-searchbar {
     float: left;
     padding: 18px 15px;
     width: 270px;
+    margin-top: 1.5vh;
+    margin-left: 8px;
     height: 1px;
-    top: 0;
-    background-color: #0d1117;
+    border-color: #555658;
+    background-color: #161B22;
+    border-radius: 6px;
+    color: white;
 }
 
 .navbar-item {
@@ -105,6 +108,11 @@ ul.repositories-list > li {
     text-decoration: underline;
 }
 
+.repositories-list img {
+    border-radius: 10px;
+    transform: translateY(-3px);
+}
+
 div.sidebox {
     padding: 20px 0px;
     width: 100%;
@@ -132,11 +140,20 @@ div.sidebox {
 
 button#new-repo {
     border-radius: 6px;
-    margin-left: 17px;
+    margin-left: 11%;
     background-color: #1F6FEB;
     color: white;
     padding: 7px;
     border: none;
+    width: 9vh;
+    height: 4vh;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+button#new-repo i {
+    font-size: 15px;
 }
 
 button#new-repo:hover {
@@ -192,7 +209,7 @@ main {
 section.campus {
     margin: 2vh 0;
     border-radius: 8px;
-    padding: 30px 25px 15px 25px;
+    padding: 10px 25px 15px 25px;
 }
 
 section.campus h3 {
@@ -208,6 +225,7 @@ section.campus article {
 } 
 
 section.campus button {
+    margin-top: 2vh;
     padding: 8px 15px;
     border-radius: 8px;
     background-color: #2b2c2e;
@@ -324,7 +342,7 @@ footer {
 }
 
 .footer-links {
-    margin-left: 20%;
+    margin-left: 50%;
     display: flex;
 }
 
@@ -349,12 +367,17 @@ footer {
 }
 
 .footer-links .ft-link {
-    margin-left: 50%;
+    margin-left: 11%;
 }
 
 #copyright {
     text-decoration: none;
     color: inherit;
+}
+
+#copyright i {
+    font-size: 25px;
+    transform: translateY(4px);
 }
 
 #copyright:hover > i {

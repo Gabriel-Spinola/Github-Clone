@@ -8,17 +8,17 @@
         <title>GitHub Clone</title>
 
         <link rel="stylesheet" href="./style.css">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     </head>
 
     <body>
         <header>
             <nav class="topnav">
-                <a id="github-logo"><img src="Assets/logo.png" alt="" width="50px"></a>
+                <a id="github-logo"><i class="fa fa-github"></i></a>
 
-                <div class="nav-searchbar border-default">
-                    <p>Search or jump to...</p>
-                </div>
+                </i><input class="nav-searchbar border-default" placeholder="Search or jump to..."></input>
 
                 <a href="#" class="navbar-item">Pull requests</a>
                 <a href="#" class="navbar-item">Issues</a>
@@ -26,29 +26,32 @@
                 <a href="#" class="navbar-item">Marketplace</a>
                 <a href="#" class="navbar-item">Explore</a>
 
-                <a href="#" class="navbar-item-r">@IconPlaceholder</a>
-                <a href="#" class="navbar-item-r">@IconPlaceholder</a>
-                <a href="#" class="navbar-item-r">@IconPlaceholder</a>
+                <a href="#" class="navbar-item-r">@IP</a>
+                <a href="#" class="navbar-item-r">@IP</a>
+                <a href="#" class="navbar-item-r">@IP</a>
             </nav>
         </header>
 
-        <aside class="repositories">
+        <aside id="repo" class="repositories">
             <div class="sidebox">
                 <div class="top-repositories">
                     <h3>Top Repositories</h3>
-                    <button id="new-repo" type="button"><strong>@IC New</strong></button>
+
+                    <button id="new-repo" type="button">
+                        <strong><i class="fa fa-github"></i> New</strong>
+                    </button>
 
                     <!--Should be a input field-->
                     <input class="search-bar border-default" type="text" placeholder="Find a repository..."></input>
 
                     <ul class="repositories-list">
-                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo1</a></li>
-                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo2</a></li>
-                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo3</a></li>
-                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo4</a></li>
-                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo5</a></li>
-                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo6</a></li>
-                        <li><a href="#"><img src="#"> Gabriel-Spinola/Repo7</a></li>
+                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo1</a></li>
+                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo2</a></li>
+                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo3</a></li>
+                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo4</a></li>
+                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo5</a></li>
+                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo6</a></li>
+                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo7</a></li>
                     </ul>
                     <a id="show-more" href="#">Show more</a>
                 </div>
@@ -114,7 +117,7 @@
 
         <footer>
             <div class="copyright-box">
-                <a id="copyright" href="#"><i>@IP</i>   © 2023 Github, Inc.</a>
+                <a id="copyright" href="#"><i class="fa fa-github"></i>   © 2023 Github, Inc.</a>
             </div>
 
             <div class="footer-links">
@@ -140,5 +143,7 @@
                 </ul>
             </div>
         </footer>
+
+        <script src="./Scripts/scrolldown.js"></script>
     </body>
 </html>
