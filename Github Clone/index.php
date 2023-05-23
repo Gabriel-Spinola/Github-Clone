@@ -1,3 +1,12 @@
+<?php 
+
+    require './Database.php';
+    require './HomeModel.php';
+
+    $homeModel = new HomeModel(new MySql);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -45,13 +54,18 @@
                     <input class="search-bar border-default" type="text" placeholder="Find a repository..."></input>
 
                     <ul class="repositories-list">
+                        <?php foreach ($homeModel -> getRepos() as $key => $row): ?>
+                            <li><a href="#"><img src="./Assets/profilepic.jpg"> <?php print $row['owner'] . '/' . $row['name'] ?></a></li>
+                        <?php endforeach ?>
+                        
+                        <!--
                         <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo1</a></li>
-                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo2</a></li>
-                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo3</a></li>
-                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo4</a></li>
-                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo5</a></li>
-                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo6</a></li>
-                        <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo7</a></li>
+                            <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo2</a></li>
+                            <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo3</a></li>
+                            <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo4</a></li>
+                            <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo5</a></li>
+                            <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo6</a></li>
+                            <li><a href="#"><img src="./Assets/profilepic.jpg"> Gabriel-Spinola/Repo7</a></li>-->
                     </ul>
                     <a id="show-more" href="#">Show more</a>
                 </div>
