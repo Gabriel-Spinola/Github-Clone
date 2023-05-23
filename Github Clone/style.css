@@ -183,7 +183,7 @@ button#new-repo:hover {
 
 /** Main **/
 
-main, footer {
+main {
     width: 48%;
     position: relative;
     left: 24%;
@@ -227,6 +227,7 @@ section.campus img {
 
 section.feed {
     margin: 2vh 0;
+    margin-bottom: 5vh;
     border-radius: 8px;
     padding: 15px;
     background-color: #0D1117;
@@ -266,7 +267,8 @@ aside.latest-changes {
 .latest-changes h3 {
     font-size: 13.5px;
     margin-bottom: 8px;
-    color: #a8a8a8;
+    color: #d6d5d5;
+    transform: translateX(-16px);
 }
 
 .lc-list {
@@ -284,6 +286,11 @@ aside.latest-changes {
     text-decoration: none;
 }
 
+.lc-list a:hover {
+    color: #4b8df0;
+    text-decoration: underline;
+}
+
 .lc-list p {
     font-size: 12px;
     color: #919292;
@@ -296,11 +303,46 @@ aside.latest-changes {
     font-size: 13px;
 }
 
+.latest-changes a#view-changelog:hover { 
+    color: #6c95d3;
+}
 
 /** Footer **/
 
 footer {
     /*Makes footer go down*/ 
     bottom: 0;
-    width: 100%;
+    width: 48%;
+    position: relative;
+    left: 24%;
+    display: flex;
+}
+
+.copyright-box {
+    color: #7b7c7e;
+    font-size: 13px;
+}
+
+.footer-links {
+    margin-left: 20%;
+    display: flex;
+}
+
+.footer-links ul {
+    font-size: 13px;
+    color: #7b7c7e;
+    list-style: none;   
+}
+
+.footer-links .ft-link {
+    margin-left: 50%;
+}
+
+#copyright {
+    text-decoration: none;
+    color: inherit;
+}
+
+#copyright:hover > i {
+    color: #999a9c;
 }
