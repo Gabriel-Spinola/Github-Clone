@@ -20,6 +20,15 @@ nav * {
     display: inline;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.title2 {
+    font-size: 24px;
+}
+
 #github-logo {
     float: left;
     padding-left: 15px;
