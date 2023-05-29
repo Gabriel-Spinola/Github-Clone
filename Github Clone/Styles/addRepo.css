@@ -1,6 +1,4 @@
-hr {
-    border-top: 10px solid red;
-}
+
 
 section.title h2 {
     font-size: 24px;
@@ -19,4 +17,12 @@ section.title a {
 
 section.title a:hover {
     text-decoration: underline;
+}
+
+.repo-detail {
+
+}
+
+#owner {
+    border-radius: 6px;
 }

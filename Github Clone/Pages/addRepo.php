@@ -20,6 +20,15 @@
         <link rel="stylesheet" href="../Styles/header.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <style>
+            .line {
+                height: 1px;
+                border-width: 0;
+                color: gray;
+                background-color: gray;
+            }
+        </style>
     </head>
 
     <body>
@@ -40,17 +49,17 @@
                 <a href="#" class="navbar-item-r">@IP</a>
                 <a href="#" class="navbar-item-r">@IP</a>
                 <a href="#" class="navbar-item-r">@IP</a>
-            </nav>
+            </nav>  
         </header>
 
         <main class="center">
             <section class="title">
-                <h2 class="title2">Create a new repositor</h2>
+                <h2 class="title2">Create a new repository</h2>
                 <p>A repository contains all project files, including the revision history. Already have a project repository elsewhere?</p>
                 <a href="#">Import a repository.</a>
             </section>
             
-            <hr>
+            <hr class="line">
 
             <form method="post">
                 <section class="repo-detail">
@@ -78,7 +87,7 @@
                     <input type="text" name="repo-description" id="repo-description-input">
                 </section>
 
-                <hr>
+                <hr class="line">
 
                 <section class="privacy">
                     <div class="privacy-box">
@@ -98,7 +107,7 @@
                     </div>
                 </section>
 
-                <hr>
+                <hr class="line">
 
                 <section class="repo-initialization">
                     <label for="readme">Initialize this repository with:</label>
@@ -132,13 +141,13 @@
                     </div>
                 </section>
 
-                <hr>
+                <hr class="line">
 
                 <section class="warning">
                     <span><svg>I</svg>You are creating a private repository in your personal account.</span>
                 </section>
 
-                <hr>
+                <hr class="line">
 
                 <section class="submit-box">
                     <input type="submit" name="submit" value="Create Repository">
@@ -146,7 +155,7 @@
             </form>
         </main>
 
-        <hr>
+        <hr class="line">
 
         <footer>
             <div class="copyright-box">
