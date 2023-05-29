@@ -1,4 +1,0 @@
-Delivery System: 
-    - Stock
-    - Cart
-    - Sells Register

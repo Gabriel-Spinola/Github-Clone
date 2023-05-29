@@ -1,0 +1,22 @@
+hr {
+    border-top: 10px solid red;
+}
+
+section.title h2 {
+    font-size: 24px;
+}
+
+section p {
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+section.title a {
+    text-decoration: none;
+    color: #7098d4;
+    font-size: 14px;
+}
+
+section.title a:hover {
+    text-decoration: underline;
+}
