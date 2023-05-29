@@ -17,25 +17,28 @@ class RepoModel {
         return $query -> fetchAll();
     }
 
+    public function insertNewRepo(
+        String $repoName, String $repoDescripton, int | string $owner,
+        int $privacy, int $gitignore, int $license
+    ): bool {
+        $query = $this -> pdo -> connect() -> prepare(
+            "INSERT INTO `repositories_tb`
+            VALUES (null, ?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?)"
+        ); 
+        
+        return $query -> execute([
+            $repoName, $repoDescripton, $owner,
+            '0', $privacy, $gitignore, $license
+        ]);
+    }
+
     public function processForm() {
         if (isset($_POST['submit'])) {
             try {            
-                $owner = $_POST['owner'];
-                $repoName = $_POST['repo-name'];
-                $repoDescripton = $_POST['repo-description'];
-                $privacy = $_POST['privacy'];
-                $gitignore = $_POST['gitignore'];
-                $license = $_POST['license'];
-
-                $query = $this -> pdo -> connect() -> prepare(
-                    "INSERT INTO `repositories_tb`
-                    VALUES (null, ?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?)"
-                ); 
-                
-                $query -> execute([
-                    $repoName, $repoDescripton, $owner,
-                    '0', $privacy, $gitignore, $license
-                ]);
+                $this -> insertNewRepo(
+                    $_POST['repo-name'], $_POST['repo-description'], $_POST['owner'],
+                    $_POST['privacy'], $_POST['gitignore'], $_POST['license']
+                );
 
                 header('Location: ' . INCLUDE_PATH . 'Pages/home.php');
                 die;
@@ -44,17 +47,5 @@ class RepoModel {
                 echo $e -> getMessage();
             }
         }
-    }
-
-    public function insertNewRepo(
-
-    ): array {
-        $query = $this -> pdo -> connect() -> prepare(
-            "INSERT INTO `repositories_tb` ORDER BY id DESC"
-        );
-
-        $query -> execute();
-        
-        return $query -> fetchAll();
     }
 }
