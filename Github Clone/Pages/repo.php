@@ -25,16 +25,20 @@
     <body>
         <?php foreach ($repoModel -> getRepos() as $key => $row):?>
             <?php if ($row['name'] == $_GET['id']): ?>
-                <span><?php echo $row['name'] ?></span>
-                <span><?php echo $row['description'] ?></span>
-                <span><?php echo $row['date'] ?></span>
-                <span><?php echo $row['owner'] ?></span>
-                <span><?php echo $row['privacy'] == 1 ? 'public' : 'private' ?></span>
-                <span><?php echo $row['gitignore'] ?></span>
-                <span><?php echo $row['license'] ?></span>
+                <ul>
+                    <li><b>Name:</b> <?php echo $row['name'] ?></li>
+                    <li><b>Description:</b> <?php echo $row['description'] ?></li>
+                    <li><b>Date:</b> <?php echo $row['date'] ?></li>
+                    <li><b>Owner:</b> <?php echo $row['owner'] ?></li>
+                    <li><b>Privacy:</b> <?php echo $row['privacy'] == 1 ? 'public' : 'private' ?></li>
+                    <li><b>.gitignore:</b> <?php echo $row['gitignore'] ?></li>
+                    <li><b>License:</b> <?php echo $row['license'] ?></li>
+                </ul>
             <?php endif ?>
         <?php endforeach ?>
 
-        <h1>Hello, World</h1>
+        <br>
+
+        <a href="./home.php">Get back.</a>
     </body>
 </html>
