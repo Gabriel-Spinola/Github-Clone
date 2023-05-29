@@ -17,6 +17,15 @@ class RepoModel {
         return $query -> fetchAll();
     }
 
+    /*public function searchRepo(string $id) {
+        for$this->getRepos()
+
+        $query -> execute();
+        echo $id;
+        echo $query -> fetchAll()[1];
+        return $query -> fetchAll();
+    }*/
+
     public function insertNewRepo(
         String $repoName, String $repoDescripton, int | string $owner,
         int $privacy, int $gitignore, int $license

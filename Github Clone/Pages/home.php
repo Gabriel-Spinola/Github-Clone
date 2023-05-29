@@ -26,7 +26,7 @@
                     <ul class="repositories-list">
                         <?php foreach ($homeModel -> getRepos() as $key => $row): ?>
                             <li>
-                                <a href="<?php print $row['link'] ?>">
+                                <a href="./repo.php?id=<?php print $row['name'] ?>">
                                     <img src="../Assets/profilepic.jpg"> 
                                     <?php print $row['owner'] . '/' . $row['name'] ?>
                                 </a>
