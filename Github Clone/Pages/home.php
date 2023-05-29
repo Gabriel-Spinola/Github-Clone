@@ -1,14 +1,14 @@
 <?php 
 
-    require './Database.php';
-    require './Models/HomeModel.php';
-    require './Router.php';
+    require '../Database.php';
+    require '../Models/HomeModel.php';
+    require '../Router.php';
 
     $homeModel = new HomeModel(new MySql);
 
 ?>
 <?php 
-    include "./Pages/Components/header.php" 
+    include "./Components/header.php" 
     ?>
         <aside id="repo" class="repositories">
             <div class="sidebox">
@@ -27,7 +27,7 @@
                         <?php foreach ($homeModel -> getRepos() as $key => $row): ?>
                             <li>
                                 <a href="<?php print $row['link'] ?>">
-                                    <img src="./Assets/profilepic.jpg"> 
+                                    <img src="../Assets/profilepic.jpg"> 
                                     <?php print $row['owner'] . '/' . $row['name'] ?>
                                 </a>
                             </li>
@@ -54,7 +54,7 @@
                     industry knowledge you need by giving you access to industry tools, events, learning
                     resources and a growing student community.
                 </article>
-                <img src="./Assets/gc_banner_dark.png" id="campus-img">
+                <img src="../Assets/gc_banner_dark.png" id="campus-img">
                 <button type="button">Join Global Campus</button>
             </section>
 
