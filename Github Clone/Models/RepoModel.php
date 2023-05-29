@@ -17,7 +17,7 @@ class RepoModel {
         return $query -> fetchAll();
     }
 
-    /*public function searchRepo(string $id) {
+   /* public function searchRepo(string $id) {
         for$this->getRepos()
 
         $query -> execute();

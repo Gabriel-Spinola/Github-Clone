@@ -60,8 +60,8 @@
                         <div class="owner-box">
                             <label for="owner">Owner *</label>
                             <select name="owner" id="owner">
-                                <option value="1" selected><img src="#"> Gabriel-Spinola ></option>
-                                <option value="2"><img src="#"> Test2 ></option>
+                                <option value="Gabriel-Spinola" selected><img src="#"> Gabriel-Spinola ></option>
+                                <option value="Test2"><img src="#"> Test2 ></option>
                             </select>
                         </div>
 

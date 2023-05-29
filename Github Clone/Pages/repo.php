@@ -29,7 +29,7 @@
                 <span><?php echo $row['description'] ?></span>
                 <span><?php echo $row['date'] ?></span>
                 <span><?php echo $row['owner'] ?></span>
-                <span><?php echo $row['privacy'] ?></span>
+                <span><?php echo $row['privacy'] == 1 ? 'public' : 'private' ?></span>
                 <span><?php echo $row['gitignore'] ?></span>
                 <span><?php echo $row['license'] ?></span>
             <?php endif ?>
