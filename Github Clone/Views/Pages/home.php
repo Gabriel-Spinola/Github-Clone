@@ -5,9 +5,7 @@
     $homeModel = new HomeModel(new MySql);
 
 ?>
-<?php 
-   // include "./Components/header.php" 
-    ?>
+
 <aside id="repo" class="repositories">
     <div class="sidebox">
         <div class="top-repositories">

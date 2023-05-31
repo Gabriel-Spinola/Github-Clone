@@ -7,8 +7,8 @@
 
         <title>Github Clone</title>
         
-        <?php if (!is_null($pageInfo['css'])): ?>
-            <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>Styles/<?php print $pageInfo['css']?>">
+        <?php if (!is_null(@$pageInfo['css'])): ?>
+            <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>Styles/<?php echo $pageInfo['css']?>">
         <?php endif ?>
 
         <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>Styles/header.css">

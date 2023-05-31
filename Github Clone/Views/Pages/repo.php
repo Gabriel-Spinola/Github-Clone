@@ -21,4 +21,8 @@
 
 <br>
 
+<button name="edit">Edit</button>
+
+<br>
+
 <a href="<?php print INCLUDE_PATH ?>">Get back.</a>

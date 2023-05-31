@@ -1,4 +1,4 @@
-        <footer>
+<footer>
             <div class="copyright-box">
                 <a id="copyright" href="#"><i class="fa fa-github"></i>   © 2023 Github, Inc.</a>
             </div>

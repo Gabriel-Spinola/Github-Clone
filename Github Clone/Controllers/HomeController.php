@@ -7,6 +7,6 @@ use Views\MainView;
 class HomeController extends Controller {
    public function execute(): void {
        $this -> view = new MainView('home');
-       $this -> view -> render();
+       $this -> view -> render(['css' => 'home.css']);
    }
 }
