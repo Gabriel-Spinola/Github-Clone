@@ -24,8 +24,8 @@
             <ul class="repositories-list">
                 <?php foreach ($homeModel -> getRepos() as $key => $row): ?>
                     <li>
-                        <a href="./repo.php?id=<?php print $row['name'] ?>">
-                            <img src="../Assets/profilepic.jpg"> 
+                        <a href="<?php print INCLUDE_PATH ?>repo?id=<?php print $row['id'] ?>">
+                            <img src="<?php print INCLUDE_PATH ?>Assets/profilepic.jpg"> 
                             <?php print $row['owner'] . '/' . $row['name'] ?>
                         </a>
                     </li>
@@ -52,7 +52,7 @@
             industry knowledge you need by giving you access to industry tools, events, learning
             resources and a growing student community.
         </article>
-        <img src="../Assets/gc_banner_dark.png" id="campus-img">
+        <img src="<?php INCLUDE_PATH ?>Assets/gc_banner_dark.png" id="campus-img">
         <button type="button">Join Global Campus</button>
     </section>
 
@@ -93,3 +93,8 @@
     <a id="view-changelog" href="#">view changelog →</a>
 </aside><!--.latest-changes-->
 
+<script>
+    function changeLocation(newLocation) {
+        location.href = `${ window.location.href }${newLocation}`; 
+    }
+</script>

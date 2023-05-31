@@ -27,12 +27,6 @@
             </div>
         </footer>
 
-        <script>
-            function changeLocation(newLocation) {
-                location.href = `${ window.location.href }${newLocation}`; 
-            }
-        </script>
-
         <script src="./Scripts/scrolldown.js"></script>
     </body>
 </html>

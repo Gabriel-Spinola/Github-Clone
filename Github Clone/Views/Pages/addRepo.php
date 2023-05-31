@@ -2,9 +2,8 @@
     use Models\RepoModel;
 
     $repoModel = new RepoModel(new MySql);
-
+    $repoModel -> processForm();
 ?>
-
 
 <main class="center">
     <section class="title">

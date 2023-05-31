@@ -51,7 +51,7 @@ class RepoModel {
                     $_POST['privacy'], $_POST['gitignore'], $_POST['license']
                 );
 
-                header('Location: ' . INCLUDE_PATH . 'Pages/home.php');
+                header('Location: ' . INCLUDE_PATH);
                 die;
             } catch (Exception $e) {
                 Response::simpleResponse('error', 'Repository creation failed');
