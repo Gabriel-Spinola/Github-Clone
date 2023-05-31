@@ -1,8 +1,10 @@
 <?php
 
-use Helpers\Response;
+namespace Models;
 
-require '../Helpers/Response.php';
+use DbConnectionI;
+use Exception;
+use Helpers\Response;
 
 class RepoModel {
     public function __construct(private DbConnectionI $pdo) { }

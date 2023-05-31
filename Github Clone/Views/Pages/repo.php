@@ -1,4 +1,5 @@
 <?php 
+use Models\RepoModel;
 
     require '../Database.php';
     require '../Models/RepoModel.php';
