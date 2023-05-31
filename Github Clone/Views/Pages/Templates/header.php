@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>GitHub Clone</title>
+        <title>Github Clone</title>
         
         <?php if (!is_null($pageInfo['css'])): ?>
             <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>Styles/<?php print $pageInfo['css']?>">

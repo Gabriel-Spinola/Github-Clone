@@ -6,13 +6,6 @@ namespace Views;
  * @namespace View
 */
 class MainView {
-    const _title_ = 'MVC Project';
-
-    public array $menuItems = [
-        'Home', 'Extra',
-        'Contact',
-    ];
-
     public function __construct(
         private $fileName,
         private $header = 'header',
