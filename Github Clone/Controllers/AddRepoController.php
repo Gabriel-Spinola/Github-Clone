@@ -7,6 +7,6 @@ use Views\MainView;
 class AddRepoController extends Controller {
    public function execute(): void {
        $this -> view = new MainView('addRepo');
-       $this -> view -> render();
+       $this -> view -> render(['css' => 'addRepo.css']);
    }
 }

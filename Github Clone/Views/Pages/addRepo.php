@@ -5,6 +5,15 @@
     $repoModel -> processForm();
 ?>
 
+<style>
+    .line {
+        height: 1px;
+        border-width: 0;
+        color: gray;
+        background-color: gray;
+    }
+</style>
+
 <main class="center">
     <section class="title">
         <h2 class="title2">Create a new repository</h2>
