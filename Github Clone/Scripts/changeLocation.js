@@ -9,3 +9,9 @@ const changeLocation = (newLocation, mark = false) => {
 
     location.href = `${ window.location.href }${newLocation}`; 
 }
+
+const confirmAction = () => {
+    if (confirm("confirm this")) {
+        alert('ooooh my gawd')
+    } 
+}

@@ -57,6 +57,23 @@
 <br>
 
 <button name="edit" onclick='changeLocation("addRepo?id=<?php echo $pageId ?>", true)'>Edit</button>
+<br>
+
+<form method='POST'>
+    <button type='submit' name="delete">delete</button>
+</form>
+
+<?php
+    if (isset($_POST['delete'])) {
+        if ($repoModel -> deleteRepo($pageId)) {
+            header('Location: ' . INCLUDE_PATH);
+            die;
+        }
+        else {
+            echo "<h1>Failed</h1>";
+        }
+    }
+?>
 
 <br>
 

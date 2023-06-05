@@ -60,6 +60,14 @@ class RepoModel {
         ]);
     }
 
+    public function deleteRepo(int $id): bool {
+        $query = $this -> pdo -> connect() -> prepare(
+            "DELETE FROM `repositories_tb` WHERE `id`=?"
+        );
+
+        return $query -> execute([$id]);
+    }
+
     public function processForm(int $id = -1): void {
         if (isset($_POST['submit'])) {
             try {
