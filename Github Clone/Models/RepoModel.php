@@ -60,13 +60,24 @@ class RepoModel {
         ]);
     }
 
-    public function processForm(): void {
+    public function processForm(int $id = -1): void {
         if (isset($_POST['submit'])) {
-            try {            
-                $this -> insertNewRepo(
-                    $_POST['repo-name'], $_POST['repo-description'], $_POST['owner'],
-                    $_POST['privacy'], $_POST['gitignore'], $_POST['license']
-                );
+            try {
+                if ($id != -1) {
+                    $this -> updateRepo(
+                        $_POST['repo-name'], $_POST['repo-description'], $_POST['privacy'],
+                        $_POST['gitignore'], $_POST['license'], $id
+                    );
+
+                    header('Location: ' . INCLUDE_PATH . 'repo?id=' . $id);
+                    die;
+                }
+                else {
+                    $this -> insertNewRepo(
+                        $_POST['repo-name'], $_POST['repo-description'], $_POST['owner'],
+                        $_POST['privacy'], $_POST['gitignore'], $_POST['license']
+                    );
+                }
 
                 header('Location: ' . INCLUDE_PATH);
                 die;

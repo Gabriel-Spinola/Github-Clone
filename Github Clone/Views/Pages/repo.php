@@ -21,10 +21,11 @@
     }
 </style>
 
+<?php $pageId = $_GET['id'] ?>
 
 <table class="center">
     <?php foreach ($repoModel -> getRepos() as $key => $row):?>
-        <?php if ($row['id'] == $_GET['id']): ?>
+        <?php if ($row['id'] == $pageId): ?>
             <tr>
                 <th>Name:</th><td><?php echo $row['name'] ?></td>
             </tr>   
@@ -55,7 +56,7 @@
 
 <br>
 
-<button name="edit" onclick='changeLocation("addRepo", true)'>Edit</button>
+<button name="edit" onclick='changeLocation("addRepo?id=<?php echo $pageId ?>", true)'>Edit</button>
 
 <br>
 

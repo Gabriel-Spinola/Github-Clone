@@ -1,8 +1,19 @@
 <?php 
     use Models\RepoModel;
 
+    $data = null;
+    $repoId = $_GET['id'] ?? -1;
     $repoModel = new RepoModel(new MySql);
-    $repoModel -> processForm();
+
+    if ($repoId != -1) {
+        foreach ($repoModel -> getRepos() as $key => $row) {
+            if ($row['id'] == $repoId) {
+                $data = $row;
+            }
+        }
+    }
+
+    $repoModel -> processForm($repoId);
 ?>
 
 <style>
@@ -40,13 +51,13 @@
 
                 <div class="repo-name">
                     <label>Repository name *</label>
-                    <input type="text" name="repo-name" id="repo-name-input">
+                    <input type="text" name="repo-name" id="repo-name-input" value="<?php print $data['name'] ?? '' ?>">
                 </div>
             </fieldset>
 
             <p>Great repository names are short and memorable. Need inspiration? How about <a href="#">reimagined-telegram?</a></p>
 
-            <input type="text" name="repo-description" id="repo-description-input">
+            <input type="text" name="repo-description" id="repo-description-input" value="<?php print $data['description'] ?? '' ?>">
         </section>
 
         <hr class="line">
@@ -54,7 +65,13 @@
         <section class="privacy">
             <div class="privacy-box">
                 <label for="public">Public</label>
-                <input type="radio" id="public" name="privacy" value="1">
+                <input 
+                    type="radio"
+                    id="public"
+                    name="privacy"
+                    value="0"
+                    <?php echo ($data['privacy'] ?? 'checked') == '0' ? 'checked' : '' ?>
+                >
 
                 <span>Anyone on the internet can see this repository. You choose who can commit.</span>
                 <svg>P</svg>
@@ -62,7 +79,13 @@
 
             <div class="privacy-box">
                 <label for="private">Private</label>
-                <input type="radio" id="private" name="privacy" value="0">
+                <input 
+                    type="radio"
+                    id="private"
+                    name="privacy" 
+                    value="1"
+                    <?php echo ($data['privacy'] ?? '') == '1' ? 'checked' : '' ?>
+                >
 
                 <span>You choose who can see and commit to this repository.</span>
                 <svg>P</svg>
@@ -83,20 +106,20 @@
             <div class="gitignore-box">
                 <label for="gitignore">Add .gitignore</label>
                 <select name="gitignore" id="gitignore">
-                    <option value="0">None</option>
-                    <option value="1">AL</option>
-                    <option value="999">...</option>
+                    <option value="0" <?php print ($data['gitignore'] ?? 'selected') == '0' ? 'selected' : ''  ?>>None</option>
+                    <option value="1" <?php print ($data['gitignore'] ?? '') == '1' ? 'selected' : '' ?>>AL</option>
+                    <option value="999" <?php print ($data['gitignore'] ?? '') == '999' ? 'selected' : '' ?>>...</option>
                 </select>
 
                 <span>Choose which files not to track from a list of templates. <a href="#">Learn more about ignoring files.</a></span>
             </div>
 
             <div class="license-box">
-                <label for="license">Add .gitignore</label>
+                <label for="license">Add License</label>
                 <select name="license" id="license">
-                    <option value="1">None</option>
-                    <option value="2">GNU</option>
-                    <option value="3">MIT</option>
+                    <option value="1" <?php echo ($data['license'] ?? 'selected') == '1' ? 'selected' : '' ?>>None</option>
+                    <option value="2" <?php echo ($data['license'] ?? '') == '2' ? 'selected' : '' ?>>GNU</option>
+                    <option value="3" <?php echo ($data['license'] ?? '') == '3' ? 'selected' : '' ?>>MIT</option>
                 </select>
 
                 <span>Choose which files not to track from a list of templates. <a href="#">Learn more about ignoring files.</a></span>
@@ -112,7 +135,7 @@
         <hr class="line">
 
         <section class="submit-box">
-            <input type="submit" name="submit" value="Create Repository">
+            <input type="submit" name="submit" value="<?php print $repoId != -1 ? 'Update Repository' : 'Create Repository' ?>">
         </section>
     </form>
 </main>
