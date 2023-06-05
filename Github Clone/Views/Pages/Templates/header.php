@@ -20,7 +20,7 @@
     <body>
         <header>
             <nav class="topnav">
-                <a id="github-logo"><i class="fa fa-github"></i></a>
+                <a id="github-logo" href="<?php echo INCLUDE_PATH ?>"><i class="fa fa-github"></i></a>
 
                 </i><input class="nav-searchbar border-default" placeholder="Search or jump to..."></input>
 
