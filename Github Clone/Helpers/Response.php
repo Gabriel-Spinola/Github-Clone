@@ -42,7 +42,7 @@ class Response {
 
         <?php else: 
             
-            throw new InvalidArgumentException('Incorrect Response');
+            @throw new InvalidArgumentException('Incorrect Response');
             
         ?>
         

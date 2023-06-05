@@ -70,7 +70,7 @@
                     id="public"
                     name="privacy"
                     value="0"
-                    <?php echo ($data['privacy'] ?? 'checked') == '0' ? 'checked' : '' ?>
+                    <?php echo ($data['privacy'] ?? '0') == '0' ? 'checked' : '' ?>
                 >
 
                 <span>Anyone on the internet can see this repository. You choose who can commit.</span>

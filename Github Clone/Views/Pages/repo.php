@@ -2,7 +2,6 @@
     use Models\RepoModel;
 
     $repoModel = new RepoModel(new MySql);
-
 ?>
 
 <style>
@@ -40,7 +39,7 @@
             </tr>
             
             <tr>
-                <th>Privacy:</th> <td><?php echo $row['privacy'] == 1 ? 'public' : 'private' ?></td>
+                <th>Privacy:</th> <td><?php echo $row['privacy'] == 0 ? 'public' : 'private' ?></td>
             </tr>
 
             <tr>
