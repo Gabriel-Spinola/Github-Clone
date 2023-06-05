@@ -55,8 +55,10 @@
 
 <br>
 
-<button name="edit">Edit</button>
+<button name="edit" onclick='changeLocation("addRepo", true)'>Edit</button>
 
 <br>
 
 <a id="get-back" href="<?php print INCLUDE_PATH ?>">Get back.</a>
+
+<script src="<?php echo INCLUDE_PATH ?>Scripts/changeLocation.js"></script>

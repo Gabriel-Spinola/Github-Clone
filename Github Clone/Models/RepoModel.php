@@ -34,7 +34,7 @@ class RepoModel {
     ): bool {
         $query = $this -> pdo -> connect() -> prepare(
             "INSERT INTO `repositories_tb`
-            VALUES (null, ?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?)"
+             VALUES (null, ?, ?, CURRENT_TIMESTAMP, ?, ?, ?, ?, ?)"
         ); 
         
         return $query -> execute([
@@ -43,7 +43,24 @@ class RepoModel {
         ]);
     }
 
-    public function processForm() {
+    public function updateRepo(
+        String $repoName, String $repoDescripton,
+        int $privacy, int $gitignore, int $license, int $id
+    ): bool {
+        $query = $this -> pdo -> connect() -> prepare(
+            "UPDATE `repositories_tb`
+             SET `name`=?, `description`=?, `privacy`=?, `gitignore`=?, `license`=?
+             WHERE `id` = ?"
+        ); 
+        
+        return $query -> execute([
+            $repoName, $repoDescripton,
+            $privacy, $gitignore, $license,
+            $id
+        ]);
+    }
+
+    public function processForm(): void {
         if (isset($_POST['submit'])) {
             try {            
                 $this -> insertNewRepo(

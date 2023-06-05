@@ -15,8 +15,6 @@
                 <strong><i class="fa fa-github"></i> New</strong>
             </button>
 
-            <?php //Custom\Route() ?>
-
             <input class="search-bar border-default" type="text" placeholder="Find a repository..."></input>
 
             <ul class="repositories-list">
@@ -91,8 +89,4 @@
     <a id="view-changelog" href="#">view changelog →</a>
 </aside><!--.latest-changes-->
 
-<script>
-    function changeLocation(newLocation) {
-        location.href = `${ window.location.href }${newLocation}`; 
-    }
-</script>
+<script src="<?php echo INCLUDE_PATH ?>Scripts/changeLocation.js"></script>
