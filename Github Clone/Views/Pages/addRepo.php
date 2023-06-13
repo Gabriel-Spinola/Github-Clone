@@ -51,7 +51,7 @@
 
                 <div class="repo-name">
                     <label>Repository name *</label>
-                    <input type="text" name="repo-name" id="repo-name-input" value="<?php print $data['name'] ?? '' ?>">
+                    <input type="text" name="repo-name" id="repo-name-input" value="<?php print $data['name'] ?? '' ?>" required>
                 </div>
             </fieldset>
 
