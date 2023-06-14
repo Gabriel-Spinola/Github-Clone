@@ -56,5 +56,6 @@ nav a:hover{
 
 footer {
     bottom: 0 !important;
+    /* margin-top: 5px !important; */
     background-color: #B5E2FA !important;
 }
