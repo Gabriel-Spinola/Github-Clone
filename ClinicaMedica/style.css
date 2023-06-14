@@ -53,3 +53,8 @@ nav a{
 nav a:hover{
     color: var(--color2);
 }
+
+footer {
+    bottom: 0 !important;
+    background-color: #B5E2FA !important;
+}
