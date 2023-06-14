@@ -1,0 +1,19 @@
+* {
+    --color1: #0FA3B1;
+    --color2: #B5E2FA;
+    --color3: #F9F7F3;
+    --color4: #EDDEA4;
+    --color5: #f7a072;
+}
+
+section.title > div.border {
+    padding: 10px;
+}
+
+main {
+    margin-top: 20px !important;
+}
+
+footer {
+    background-color: #B5E2FA !important;
+}
