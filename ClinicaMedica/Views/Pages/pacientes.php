@@ -38,26 +38,8 @@
                     <label for="Estado" class="form-label">Estado</label> 
                 </div>
 
-                <div class="form-floating mb-3">
-                    <input type="text" name="RM" required id="RM" placeholder="Registro Médico" class="form-control"> 
-                    <label for="RM" class="form-label">Registro Médico</label>
-                </div>
-                
-                <div class="form-floating mb-3">
-                    <select name="Especialidade" id="Especialidade" class="form-select">
-                        <option value="1">Insira sua especialidade:</option>
-                        <option value="2">Fisioterapia</option>
-                        <option value="3">Odontologia</option>
-                        <option value="4">Ortopedia</option>
-                        <option value="5">Psicologia</option>
-                    </select>
-                    <label for="Especialidade" class="form-label">Especialidade</label> 
-                </div>
-
                 <input type="submit" value="Submit" class="btn btn-primary mb-3" id="submitbtn">
             </form>
         </div>
     </section>
 </main> 
-
-<hr>
