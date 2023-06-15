@@ -24,7 +24,7 @@
                     <li><a href="<?php echo INCLUDE_PATH ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH ?>pacientes">Cadastrar Paciente</a></li>
                     <li><a href="<?php echo INCLUDE_PATH ?>meds">Cadastrar Médico</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH ?>agendar">Agendar Consulta</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH ?>consultas">Agendar Consulta</a></li>
                     <li><a href="<?php echo INCLUDE_PATH ?>agendamentos">Agendamentos</a></li>
                 </ul>
            </nav>

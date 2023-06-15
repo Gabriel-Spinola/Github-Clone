@@ -4,7 +4,7 @@ namespace Controllers;
 
 use Views\MainView;
 
-class HomeController extends Controller {
+class AgendamentoController extends Controller {
    public function execute(): void {
        $this -> view = new MainView('agendamentos');
        $this -> view -> render(['css' => 'agendamentos.css']);
