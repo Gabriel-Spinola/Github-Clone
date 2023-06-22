@@ -6,6 +6,7 @@
     --main: #ec7000;
 }
 
+/* Header */
 .navbar {
     background-color: var(--main);
     height: 10vh;
@@ -75,4 +76,13 @@
     border-radius: 4px;
     height: 38px;
     margin-top: 6px;
+}
+
+#carouselExampleCaptions {
+    margin-top: 10vh;
+}
+
+#carouselExampleCaptions img {
+    height: 60vh;
+    width: 100vw;
 }
