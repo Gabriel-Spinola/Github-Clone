@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    --main: #ec7000;
+}
+
+.navbar {
+    background-color: var(--main);
+    height: 10vh;
+}
+
+.links-div {
+    margin-left: 2.5vw;
+}
+
+.nav-link {
+    color: white !important;
+    margin-top: 0.5vh;
+    font-weight: 550 !important;
+    font-size: 18px !important;
+}
+
+.logo-itau {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    margin-left: 12vw;
+}
+
+.agency-account {
+    max-width: 173px !important;
+    max-height: 48px !important;
+    padding: 10px 16px;
+    border-radius: 4px;
+    background-color: white;
+    margin-left: 13vw;
+}
+
+#spliter {
+    display: block;
+    margin: auto;
+    padding: 50%;
+    transform: translateY(-92px);
+    color: rgb(214, 214, 214);
+}
+
+.form-none {
+    border: none;
+    background-color: transparent;
+}
+
+#lock-button {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d6d0cc;
+    color: white;
+    margin-left: .5vw;
+}
+
+#plus-icon {
+    transform: translateY(-1.5px);
+}
+
+#nav-item-border {
+    margin-left: 1vw;
+}
+
+#nav-item-border a {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 4px;
+    height: 38px;
+    margin-top: 6px;
+}
