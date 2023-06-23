@@ -222,21 +222,85 @@ section.contract p {
 .services {
     display: flex;
     max-width: 67.4vw;
-    max-height: 40vh;
+    max-height: 50vh;
     flex-wrap: wrap;
     flex-direction: column;
     border: #ec7000 2px dotted;
+    gap: 4vh;
 }
 
 .renegociation {
     flex: 1;
     padding: 5px;
     border: #231d19 1px solid;
-    width: calc(67.4vw / 2);
+    width: calc(65.35vw / 2);
+    border-radius: 8px;
+    border-color: #231d1962;
+    padding: 20px;
+}
+
+.renegociation svg {
+    margin-bottom: 4px;
+    margin-right: 6px;
+}
+
+.renegociation span {
+    color: #56504c;
+    font-size: 14px;
+}
+
+h3.ren-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+
+p.ren-text {
+    font-size: 18px;
+    color: #56504cb9;
 }
 
 #renegociation-bigger {
+    display: flex;
+    flex-direction: row;
     width: 67.4vw;
+    height: 240px;
+    margin-bottom: 4vh;
+}
+
+div.ren-part1 {
+    width: calc(67.4vw / 2);
+}
+
+div.ren-part2 {
+    display: block;
+    justify-self: flex-end;
+    align-items: end;
+    z-index: -1;
+    transform: translate(20.1vw, -5.4vh);
+    width: calc(67.4vw / 2);
+}
+
+#renegociation-bigger img {
+    border-radius: 8px;
+}
+
+button#check {
+    background: white;
+    cursor: pointer;
+    border: 1px solid #231d19;
+    height: 32px;
+    width: 128px;
+    color: #231d19af;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 550;
+    transform: translateY(3vh);
+}
+
+button#check:hover {
+    border: 1px solid var(--main);
+    color: var(--main);
 }
 
 /**!SECTION **/
