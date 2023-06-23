@@ -88,7 +88,7 @@
         rgba(0, 0, 0, 0.73)),
         url(./Assets/banner_home_renegociacao_desktop_1920x540.avif)
     ;
-    
+
     background-size: cover;
     height: 56.12vh;
     width: 100vw;
@@ -98,6 +98,51 @@
 .carousel-caption {
     position: relative;
     text-align: left !important;
-    left: 5vw;
-    top: 10vh;
+    top: 18vh;
+}
+
+.carousel-caption h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    margin-top: 1.5vh;
+    font-size: 20px;
+}
+
+.carousel-caption button {
+    margin-top: 4vh;
+
+    /* Itau button style */
+    padding: 8px 16px;
+    background: rgba(0,0,0,.54);
+    cursor: pointer;
+    border: 1px solid #fff;
+    height: 48px;
+    width: 169px;
+    color: white;
+    line-height: 32px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+button.carousel-control-prev {
+    left: 15vw;
+}
+
+button.carousel-control {
+    width: 32px;
+    height: 50px;
+    /* margin: auto !important; */
+    top: 47.7vh;
+}
+
+button.carousel-control-next {
+    left: 22.5vw;
+}
+
+#carousel-controllers > .carousel-indicators {
+    right: 60vw;
+    bottom: 3vh;
 }
