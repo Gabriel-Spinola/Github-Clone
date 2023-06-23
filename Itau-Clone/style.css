@@ -150,15 +150,22 @@ button.carousel-control-next {
 /**!SECTION **/
 
 /** SECTION - Main **/
-section.resolve {
-    display: block;
-    margin-top: 3.5vh;
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
     margin-left: 15vw;
+    margin-top: 3.5vh;
 }
 
-section.resolve h2 {
+section.resolve {
+    display: block;
+}
+
+.section-title {
     font-weight: bolder;
-    color: rgb(29, 29, 29);
+    font-size: 32px;
+    color: rgb(29, 29, 29)
 }
 
 .resolve-cards {
@@ -176,21 +183,21 @@ div.card-body {
 }
 
 div.card {
-    border-color: #5c5c5caf !important;
+    border-color: #5c5c5caf;
 }
 
 div.card:hover {
-    border-color: var(--main) !important;
+    border-color: var(--main);
 }
 
 div.card-body:hover > .card-title {
-    color: var(--main) !important;
+    color: var(--main);
 }
 
 .card-sub {
     font-size: 15px;
     margin-top: 16px;
-    color: #231d19 !important;
+    color: #231d19;
 }
 
 .card-small {
@@ -202,6 +209,34 @@ div.card-body:hover > .card-title {
 .break-point::before {
     content: "\a\a\a\a\a\a\a";
     white-space: pre;
+}
+
+section.contract {
+    display: block;
+}
+
+section.contract p {
+    font-size: 19px;
+}
+
+.services {
+    display: flex;
+    max-width: 67.4vw;
+    max-height: 40vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: #ec7000 2px dotted;
+}
+
+.renegociation {
+    flex: 1;
+    padding: 5px;
+    border: #231d19 1px solid;
+    width: calc(67.4vw / 2);
+}
+
+#renegociation-bigger {
+    width: 67.4vw;
 }
 
 /**!SECTION **/
