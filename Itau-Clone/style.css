@@ -6,7 +6,8 @@
     --main: #ec7000;
 }
 
-/* Header */
+/** SECTION - Header **/
+
 .navbar {
     background-color: var(--main);
     height: 10vh;
@@ -146,3 +147,37 @@ button.carousel-control-next {
     right: 60vw;
     bottom: 3vh;
 }
+/**!SECTION **/
+
+/** SECTION - Main **/
+section.resolve {
+    display: block;
+    margin-top: 3.5vh;
+    margin-left: 15vw;
+}
+
+.resolve-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3vw;
+}
+
+div.card-body {
+    width: 10vw;
+    height: 134px;
+    color: #231d19 !important;
+}
+
+.card-sub {
+    font-size: 15px;
+    margin-top: 16px;
+    color: #231d19 !important;
+}
+
+.card-small {
+    font-size: 11px;
+    line-height: 2px;
+    color: #56504c;
+}
+
+/**!SECTION **/
