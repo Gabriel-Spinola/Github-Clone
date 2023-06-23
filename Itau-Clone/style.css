@@ -82,7 +82,22 @@
     margin-top: 10vh;
 }
 
-#carouselExampleCaptions img {
-    height: 60vh;
+#carouselExampleCaptions object {
+    background-image: linear-gradient(
+        to left, rgba(255, 255, 255, 0.116),
+        rgba(0, 0, 0, 0.73)),
+        url(./Assets/banner_home_renegociacao_desktop_1920x540.avif)
+    ;
+    
+    background-size: cover;
+    height: 56.12vh;
     width: 100vw;
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: relative;
+    text-align: left !important;
+    left: 5vw;
+    top: 10vh;
 }
