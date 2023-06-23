@@ -156,16 +156,35 @@ section.resolve {
     margin-left: 15vw;
 }
 
+section.resolve h2 {
+    font-weight: bolder;
+    color: rgb(29, 29, 29);
+}
+
 .resolve-cards {
     display: flex;
     flex-direction: row;
     gap: 1.3vw;
+    margin-top: 3vh;
 }
 
 div.card-body {
     width: 10vw;
     height: 134px;
     color: #231d19 !important;
+    cursor: pointer;
+}
+
+div.card {
+    border-color: #5c5c5caf !important;
+}
+
+div.card:hover {
+    border-color: var(--main) !important;
+}
+
+div.card-body:hover > .card-title {
+    color: var(--main) !important;
 }
 
 .card-sub {
@@ -178,6 +197,11 @@ div.card-body {
     font-size: 11px;
     line-height: 2px;
     color: #56504c;
+}
+
+.break-point::before {
+    content: "\a\a\a\a\a\a\a";
+    white-space: pre;
 }
 
 /**!SECTION **/
