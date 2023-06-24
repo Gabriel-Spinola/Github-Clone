@@ -222,7 +222,7 @@ section.contract p {
 .services {
     display: flex;
     max-width: 67.4vw;
-    max-height: 50vh;
+    max-height: 70vh;
     flex-wrap: wrap;
     flex-direction: column;
     border: #ec7000 2px dotted;
@@ -234,9 +234,13 @@ section.contract p {
     padding: 5px;
     border: #231d19 1px solid;
     width: calc(65.35vw / 2);
+    height: 270px;
+    max-height: 270px;
     border-radius: 8px;
     border-color: #231d1962;
     padding: 20px;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .renegociation svg {
@@ -291,7 +295,15 @@ div.ren-part2 {
     border-radius: 8px;
 }
 
-button#check {
+.renegociation-card-img {
+    position: relative;
+    float: right;
+    transform: translateY(-10vh);
+    height: 200px;
+    z-index: -1;
+}
+
+button.check {
     background: white;
     cursor: pointer;
     border: 1px solid #231d19;
@@ -301,16 +313,28 @@ button#check {
     border-radius: 4px;
     font-size: 14px;
     font-weight: 550;
+}
+
+button.check:not(#checkaaa, #button-bigger) {
+    margin-top: 6vh;
+    /* max-height: 270px; */
+}
+
+button#button-bigger {
+    margin-top: 3vh;
+}
+
+button#checkaaa {
     transform: translateY(3vh);
 }
 
 @media only screen and (max-width: 1280px) {
-    button#check {
+    button.check {
         transform: translateY(0vh);
     }
 }
 
-button#check:hover {
+button.check:hover {
     border: 1px solid var(--main);
     color: var(--main);
 }
