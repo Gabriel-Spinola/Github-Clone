@@ -175,7 +175,7 @@ section.resolve {
     margin-top: 3vh;
 }
 
-div.card-body {
+div.resolve-card-body {
     width: 10vw;
     height: 134px;
     color: #231d19 !important;
@@ -186,11 +186,11 @@ div.card {
     border-color: #5c5c5caf;
 }
 
-div.card:hover {
+div.resolve-card:hover {
     border-color: var(--main);
 }
 
-div.card-body:hover > .card-title {
+div.resolve-card-body:hover > .resolve-title {
     color: var(--main);
 }
 
@@ -225,7 +225,6 @@ section.contract p {
     max-height: 70vh;
     flex-wrap: wrap;
     flex-direction: column;
-    border: #ec7000 2px dotted;
     gap: 4vh;
 }
 
@@ -298,9 +297,16 @@ div.ren-part2 {
 .renegociation-card-img {
     position: relative;
     float: right;
-    transform: translateY(-10vh);
     height: 200px;
     z-index: -1;
+}
+
+.renegociation-card-img:not(#img-wrong) {
+    transform: translateY(-10vh);
+}
+
+#img-wrong {
+    transform: translateY(-12vh);
 }
 
 button.check {
@@ -317,7 +323,6 @@ button.check {
 
 button.check:not(#checkaaa, #button-bigger) {
     margin-top: 6vh;
-    /* max-height: 270px; */
 }
 
 button#button-bigger {
@@ -339,4 +344,23 @@ button.check:hover {
     color: var(--main);
 }
 
+div.credit-card-img {
+    height: 278px;
+}
+
+.credit-cards {
+    overflow: hidden;
+}
+
+#credit-card-title {
+    margin-bottom: 3vh;
+}
+
+/**!SECTION **/
+
+/**SECTION - Footer **/
+footer {
+    margin-top: 6vh;
+    bottom: 0;
+}
 /**!SECTION **/
