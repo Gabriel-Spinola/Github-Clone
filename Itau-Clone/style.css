@@ -281,6 +281,12 @@ div.ren-part2 {
     width: calc(67.4vw / 2);
 }
 
+@media only screen and (max-width: 1280px) {
+    div.ren-part2 {
+        transform: translate(13.66vw, -5.4vh);
+    }
+}
+
 #renegociation-bigger img {
     border-radius: 8px;
 }
@@ -296,6 +302,12 @@ button#check {
     font-size: 14px;
     font-weight: 550;
     transform: translateY(3vh);
+}
+
+@media only screen and (max-width: 1280px) {
+    button#check {
+        transform: translateY(0vh);
+    }
 }
 
 button#check:hover {
