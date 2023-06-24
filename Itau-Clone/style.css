@@ -356,6 +356,33 @@ div.credit-card-img {
     margin-bottom: 3vh;
 }
 
+.vinhos {
+    display: flex;
+    position: relative;
+    margin-top: 6vh;
+    height: 313.48px;
+    /* max-height: 313.48px; */
+}
+
+.vinhos-img {
+    /* max-width: 1260px !important; */
+    height: 313.48px;
+}
+
+.vinhos-img img {
+    position: absolute;
+    /* width: 1200px !important; */
+    height: 313.48px;
+}
+
+.vinhos-text {
+    position: absolute;
+    width: 30vw;
+    top: 4vh;
+    right: 2.5vw;
+    font-size: 18px;
+}
+
 /**!SECTION **/
 
 /**SECTION - Footer **/
