@@ -445,6 +445,16 @@ div.credit-card-img {
 .apps {
     overflow: hidden;
 }
+
+.channel-button {
+    display: flex;
+    width: 20vw;
+    font-weight: bold !important;
+    height: 50px; 
+    margin-top: 5vh;
+    margin-left: 3.4vw;
+}
+
 /**!SECTION **/
 
 /**SECTION - Footer **/
