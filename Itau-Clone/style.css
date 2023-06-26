@@ -417,6 +417,34 @@ div.credit-card-img {
     font-size: 18px;
 }
 
+#news-title {
+    color: var(--main);
+    font-weight: bold;
+}
+
+.news {
+    overflow: hidden;
+}
+
+.access-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.access-button {
+    display: flex;
+    width: 20vw;
+    color: white !important;
+    font-weight: bold !important;
+    background-color: var(--main) !important;
+    height: 50px; 
+    margin-top: 5vh;
+    margin-left: 3.4vw;
+}
+
+.apps {
+    overflow: hidden;
+}
 /**!SECTION **/
 
 /**SECTION - Footer **/
