@@ -13,8 +13,8 @@ class MainView {
     ) { }
     
     public function render(array $pageInfo = []): void {
-        include 'Templates/' . $this -> header . '.php';
+        include 'Pages/Templates/' . $this -> header . '.php';
         include 'Pages/' . $this -> fileName . '.php';
-        include 'Templates/' . $this -> footer . '.php';
+        include 'Pages/Templates/' . $this -> footer . '.php';
     }
 }

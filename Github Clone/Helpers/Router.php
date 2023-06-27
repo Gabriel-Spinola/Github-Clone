@@ -5,6 +5,8 @@
 
 namespace Helpers;
 
+use Exception;
+
 class Router
 {
 	public static $executed;
