@@ -31,10 +31,10 @@ $loginController = new LoginController();
 
 // ---------------------------------------------------------
 // Controllers
-Helpers\Router :: get('/', function() use($loginController): void {
-    $loginController -> execute();
+Helpers\Router :: get('/', function() use($homeController): void {
+    $homeController -> execute();
 });
 
-Helpers\Router :: get('/aa', function() use($homeController): void {
-    $homeController -> execute();
+Helpers\Router :: get('/login', function() use($loginController): void {
+    $loginController -> execute();
 });

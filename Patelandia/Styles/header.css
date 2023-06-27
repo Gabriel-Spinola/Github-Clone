@@ -1,0 +1,11 @@
+nav {
+    position: fixed !important;
+    height: 9vh;
+    width: 100vw;
+    background-color: crimson;
+}
+
+.nav-link {
+    color: aliceblue !important;
+}
+
