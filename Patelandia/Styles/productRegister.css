@@ -1,0 +1,14 @@
+main {
+    position: absolute;
+    width: 100vw;
+    top: 12vh;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+section.register {
+    
+}

@@ -1,0 +1,32 @@
+main {
+    position: absolute;
+    width: 100vw;
+    top: 12vh;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.order-row {
+    display: flex;
+    gap: 2%;
+    margin-left: 2%;
+}
+
+.order-register {
+    width: 48%;  
+} 
+
+#divisor {
+    position: absolute;
+    height: 100%;
+    max-height: 100vh;
+    left: 50%;
+    border-right: solid 1px gray;
+}
+
+.orders {
+    width: 46%;
+}

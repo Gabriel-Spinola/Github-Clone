@@ -21,21 +21,15 @@
     
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class="mb-4" id="pastelandia-logo" src="<?php echo INCLUDE_PATH ?>Assets/logo-pastelandia.jpg" alt="" width="64" height="64"></a>
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <nav class="navcliente">
+                <img id="logo-img" src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/logopng.png" width="120" height="80" title="pastelândia">
 
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link active" href="#">Pedidos</a>
-                            <a class="nav-link active" href="#">Sobre nós</a>
-                        </div>
-                    </div>
-                </div>
+                <ul class="navlist">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="./meuspedidos.html">Meus pedidos</a></li>
+                    <li><button><a href="./pedir.html">Fazer pedido</a></button></li>
+                </ul>
             </nav>
         </header>

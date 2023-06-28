@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+main{
+    top: 12vh;
+    position: absolute;
+    width: 100vw;
+}
+section{
+    width: 90%;
+    margin: auto;
+}
+h1#table{
+    text-align: center;
+}
+table{
+    text-align: center;
+}
+td{
+    max-width: 2px;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+a.green{
+    color: green;
+    text-decoration: none;
+}
