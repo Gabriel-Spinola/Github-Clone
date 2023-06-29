@@ -9,7 +9,7 @@
 
             <h3>O MELHOR PASTEL DE BH</h3>
         
-            <p>quentinho,gostoso  e cheio de recheio</p>
+            <p>quentinho, gostoso  e cheio de recheio</p>
 
             <button><a href="pedir.html" title="pedir">PEÇA JÁ</a></button>
 
