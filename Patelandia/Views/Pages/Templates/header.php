@@ -25,11 +25,11 @@
                 <img id="logo-img" src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/logopng.png" width="120" height="80" title="pastelândia">
 
                 <ul class="navlist">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="./meuspedidos.html">Meus pedidos</a></li>
-                    <li><button><a href="./pedir.html">Fazer pedido</a></button></li>
+                    <li><a href="<?php INCLUDE_PATH ?>">Home</a></li>
+                    <li><a href="<?php INCLUDE_PATH ?>login">Login</a></li>
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="<?php INCLUDE_PATH ?>myorders">Meus pedidos</a></li>
+                    <li><button><a href="">Fazer pedido</a></button></li>
                 </ul>
             </nav>
         </header>

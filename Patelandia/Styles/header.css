@@ -71,37 +71,4 @@
     height: 90%;
     margin-left: 8%;
 }
-
-.section1{
-    position: absolute;
-    top: 10%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #FA1B37;
- }
- .section1 img{
-     width: 40%;
- }
- .content1{
-     position: absolute;
-     top: 50%;
-     text-align: center;
- }
- .text1{
-     width: 60%;
-     height: 50vh;
-     background-color: #FAE816;
-     margin-top: 30px;
-     text-align: center;
- }
- .text1 h1{
-     font-family: 'Caprasimo', cursive;
-     font-size: 10vh;
- }
- .text1 h3{
-     font-size: 5vh;
-     font-family: 'Nunito Sans', sans-serif;
- }
-
  

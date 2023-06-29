@@ -17,6 +17,8 @@ use Controllers\HomeController;
 use Controllers\LoginController;
 use Controllers\ProductRegisterController;
 use Controllers\OrderRegisterController;
+use Controllers\StockController;
+use Controllers\MyOrdersController;
 
 // ---------------------------------------------------------
 // Autoload
@@ -32,6 +34,8 @@ $homeController = new HomeController();
 $loginController = new LoginController();
 $productRegister = new ProductRegisterController();
 $orderRegister = new OrderRegisterController();
+$stockController = new StockController();
+$myOrdersController = new MyOrdersController();
 
 // ---------------------------------------------------------
 // Controllers
@@ -49,4 +53,12 @@ Helpers\Router :: get('/productregister', function() use($productRegister): void
 
 Helpers\Router :: get('/orderregister', function() use($orderRegister): void {
     $orderRegister -> execute();
+});
+
+Helpers\Router :: get('/stock', function() use($stockController): void {
+    $stockController -> execute();
+});
+
+Helpers\Router :: get('/myorders', function() use($myOrdersController): void {
+    $myOrdersController -> execute();
 });

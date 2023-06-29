@@ -1,14 +1,10 @@
-<?php
-    $orders = [];
-?>
-
 <main>
     <h2 class="center mb-4 mt-4">Registro de venda</h2>
     <hr class="center mb-4">
 
     <div class="order-row">
         <section class="order-register">
-            <form action="" autocomplete="off" method="post" id="order-form">
+            <form action="" autocomplete="off" id="order-form">
                 <div class="mb-3">
                     <label for="product-name" class="form-label">Nome do produto</label>
                     <input type="text" class="form-control" id="product-name" name="product-name" placeholder="Produto" required>
@@ -16,48 +12,70 @@
                             
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">quantidade</label>
-                    <input class="form-control" type="number" min="0.00" max="10000.00" step="0.01" placeholder='Preço do produto (R$)' required>
+                    <input class="form-control" id="amount" name="amount" type="number" min="0" max="10000" step="1" placeholder='Preço do produto (R$)' required>
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Detalhes da venda (opcional)</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descrição"></textarea></textarea>
+                    <textarea class="form-control" id="details" name="detailss" rows="3" placeholder="Descrição"></textarea></textarea>
                 </div>
 
                 <div class="mb-3 text-center">
-                    <button type="submit" name="submit" class="btn btn-outline-danger center" onclick="addRow()">Enviar</button>
+                    <button type="submit" name="submit" class="btn btn-outline-danger center">Enviar</button>
                 </div>
             </form>
-
-            <?php
-
-                if (isset($_POST['submit'])) {
-                    array_push($orders, $_POST['product-name']);
-                }
-
-            ?>
         </section>
 
         <div id="divisor"></div>
 
         <section class="orders">
             <table class="table" id="orders-table">
-                <tr>
-                    <td>Row1 cell1</td>
-                </tr>
-                
-                <?php for ($i = 0; $i < count($orders); $i++): ?>
-                    <tr>
-                        <td><?php echo $orders[$i] ?></td>
-                    </tr>
-                <?php endfor ?>
-            </table>
+                <thead>
+                    <th>Nome do produto</th>
+                    <th>Quantidade</th>
+                    <th>Detalhes</th>
+                </thead>
+            </table>    
+
+            <h4>Valor Total: R$ 100.00</h4>
         </section>
     </div>
     
     <script src="<?php echo INCLUDE_PATH ?>Scripts/autoComplete.js"></script>
 
     <script>
+        let orderForm = document.getElementById("order-form");
+
+        orderForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            let name = document.getElementById("product-name");
+            let amount = document.getElementById("amount");
+            let details = document.getElementById("details");
+
+            const addRow = () => {
+                let tableRef = document.getElementById("orders-table")
+
+                let newRow = tableRef.insertRow(-1);
+
+                let nameCell = newRow.insertCell(0);
+                let amountCell = newRow.insertCell(1);
+                let detailsCell = newRow.insertCell(2);
+
+                let nameText = document.createTextNode(name.value);
+                let amountText = document.createTextNode(amount.value);
+                let detailsText = document.createTextNode(details.value);
+                
+                nameCell.appendChild(nameText);
+                amountCell.appendChild(amountText);
+                detailsCell.appendChild(detailsText);
+            }
+
+            alert(name.value);
+
+            addRow();
+        });
+
         options = ["Café", "Coca", "Hamburguer", "Pastel"];
 
         autocomplete(document.getElementById("product-name"), options);
