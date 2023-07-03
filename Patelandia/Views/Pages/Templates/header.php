@@ -1,3 +1,7 @@
+<?php
+    use Models\LoginModel;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,11 +29,41 @@
                 <img id="logo-img" src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/logopng.png" width="120" height="80" title="pastelândia">
 
                 <ul class="navlist">
-                    <li><a href="<?php INCLUDE_PATH ?>/">Home</a></li>
-                    <li><a href="<?php INCLUDE_PATH ?>login">Login</a></li>
-                    <li><a href="">Cardápio</a></li>
-                    <li><a href="<?php INCLUDE_PATH ?>myorders">Meus pedidos</a></li>
-                    <li><button><a href="">Fazer pedido</a></button></li>
+                    <li><a href="http://localhost:8080/Patelandia/">Home</a></li>
+                    <?php if (@$pageInfo['header'] == 'header'): ?>
+                        <li><a href="<?php INCLUDE_PATH ?>menu">Cardápio</a></li>
+                        <?php if (LoginModel::isLoggedIn()): ?>
+                            <li><a href="<?php INCLUDE_PATH ?>myorders">Meus pedidos</a></li>
+                            <li><a href="<?php INCLUDE_PATH ?>login?logout=1">Loggout</a></li>
+                        <?php else: ?>
+                            <li><a href="<?php INCLUDE_PATH ?>login">Meus pedidos</a></li>
+                            <li><a href="<?php INCLUDE_PATH ?>login">Login</a></li>
+                        <?php endif ?>
+                        
+                        <li><button><a href="<?php INCLUDE_PATH ?>order">Fazer pedido</a></button></li>
+                    <?php elseif (@$pageInfo['header'] == 'adminHeader'): ?>
+                        <li><a href="<?php INCLUDE_PATH ?>stock">Estoque</a></li>
+                        <li><a href="<?php INCLUDE_PATH ?>orderregister">Pedidos</a></li>
+                        <li><a href="<?php INCLUDE_PATH ?>productregister">Produtos</a></li>
+                        <?php if (LoginModel::isLoggedIn()): ?>
+                            <li><a href="<?php INCLUDE_PATH ?>login?logout=1">Loggout</a></li>
+                        <?php else: ?>
+                            <li><a href="<?php INCLUDE_PATH ?>login">Login</a></li>
+                        <?php endif ?>
+
+                        <li><button><a href="<?php INCLUDE_PATH ?>menu">Cardápio</a></button></li>
+                    <?php else: ?>
+                        <li><a href="<?php INCLUDE_PATH ?>menu">Cardápio</a></li>
+                        <?php if (LoginModel::isLoggedIn()): ?>
+                            <li><a href="<?php INCLUDE_PATH ?>myorders">Meus pedidos</a></li>
+                            <li><a href="<?php INCLUDE_PATH ?>login?logout=1">Loggout</a></li>
+                        <?php else: ?>
+                            <li><a href="<?php INCLUDE_PATH ?>login">Meus pedidos</a></li>
+                            <li><a href="<?php INCLUDE_PATH ?>login">Login</a></li>
+                        <?php endif ?>
+
+                        <li><button><a href="<?php INCLUDE_PATH ?>menu">Cardápio</a></button></li>
+                    <?php endif ?>
                 </ul>
             </nav>
         </header>

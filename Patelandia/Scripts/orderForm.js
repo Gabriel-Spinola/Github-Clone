@@ -25,7 +25,5 @@ orderForm.addEventListener("submit", (e) => {
         detailsCell.appendChild(detailsText);
     }
 
-    alert(name.value);
-
     addRow();
 });

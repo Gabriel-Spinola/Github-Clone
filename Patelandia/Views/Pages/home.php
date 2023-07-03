@@ -1,6 +1,12 @@
+<style>
+    a#link-price {
+        color: #FA1B37 !important;
+    }
+</style>
+
 <main>
     <section class="layout">
-        
+
         <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia//pastel4.jpg" title="pastelandia" id="imageminicial">
 
         <div class="text1">
@@ -8,10 +14,10 @@
             <h1>PASTELANDIA</h1>
 
             <h3>O MELHOR PASTEL DE BH</h3>
-        
-            <p>quentinho, gostoso  e cheio de recheio</p>
 
-            <button><a href="pedir.html" title="pedir">PEÇA JÁ</a></button>
+            <p>quentinho, gostoso e cheio de recheio</p>
+
+            <button><a id="link-price" href="<?php echo INCLUDE_PATH ?>order">R$2,00</a></button>
 
         </div>
 
@@ -25,35 +31,35 @@
 
             <section class="promo1">
 
-                    <div class="promo">
+                <div class="promo">
 
-                        <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
+                    <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
 
-                        <h3>10 por 20</h3>
-                        
-                        <a href="pedir.html" title="pedir">PEÇA JÁ</a>
+                    <h3>10 por 20</h3>
 
-                    </div>
+                    <h3 class="price"><a href="<?php echo INCLUDE_PATH ?>order">R$2,00</a></h3>
 
-                    <div class="promo">
+                </div>
 
-                        <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
+                <div class="promo">
 
-                        <h3>10 por 20</h3>
-                        
-                        <a href="pedir.html" title="pedir">PEÇA JÁ</a>
+                    <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
 
-                    </div>
+                    <h3>10 por 20</h3>
 
-                    <div class="promo">
+                    <h3 class="price"><a href="<?php echo INCLUDE_PATH ?>order">R$2,00</a></h3>
 
-                        <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
+                </div>
 
-                        <h3>10 por 20</h3>
-                        
-                        <a href="pedir.html" title="pedir">PEÇA JÁ</a>
+                <div class="promo">
 
-                    </div>
+                    <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
+
+                    <h3>10 por 20</h3>
+
+                    <h3 class="price"><a href="<?php echo INCLUDE_PATH ?>order">R$2,00</a></h3>
+
+                </div>
 
             </section>
 
@@ -64,8 +70,8 @@
                     <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
 
                     <h3>10 por 20</h3>
-                    
-                    <a href="pedir.html" title="pedir">PEÇA JÁ</a>
+
+                    <h3 class="price"><a href="<?php echo INCLUDE_PATH ?>order">R$2,00</a></h3>
 
                 </div>
 
@@ -74,8 +80,8 @@
                     <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
 
                     <h3>10 por 20</h3>
-                    
-                    <a href="pedir.html" title="pedir">PEÇA JÁ</a>
+
+                    <h3 class="price"><a href="<?php echo INCLUDE_PATH ?>order">R$2,00</a></h3>
 
                 </div>
 
@@ -84,8 +90,8 @@
                     <img src="<?php echo INCLUDE_PATH ?>Assets/pastelandia/coxinha1.jpg">
 
                     <h3>10 por 20</h3>
-                    
-                    <a href="pedir.html" title="pedir">PEÇA JÁ</a>
+
+                    <h3 class="price"><a href="<?php echo INCLUDE_PATH ?>order">R$2,00</a></h3>
 
                 </div>
 

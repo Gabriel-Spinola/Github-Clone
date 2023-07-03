@@ -20,7 +20,7 @@ class MySql implements DBConnectionI {
                 // Set error mode
                 $this -> pdo -> setAttribute(PDO :: ATTR_ERRMODE, PDO :: ERRMODE_EXCEPTION);
             } catch (Exception $e) {
-                print "<h2>Error connecting to DataBase</h2>";
+                print "<h2>Error connecting to DataBase</h2>" . $e -> getMessage();
             }
         }
 
