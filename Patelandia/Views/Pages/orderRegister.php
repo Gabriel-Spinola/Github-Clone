@@ -63,10 +63,13 @@ $stockModel = new StockModel(new MySql);
 
         <?php
 
-        // $orderRegisterModel = new OrderRegisterModel(new MySql);
+            $orderRegisterModel = new OrderRegisterModel();
 
+            $orderRegisterModel->TreatData();
 
-        // $orderRegisterModel->AtLeastUpdate();
+            foreach($GLOBALS['data'] as $data) {
+                echo $data;
+            }
         ?>
 
     </div>
@@ -108,7 +111,7 @@ $stockModel = new StockModel(new MySql);
                     data: {
                         info: jsonString
                     },
-                    cache: false,
+                     cache: false,
                     success: function(data) {
                         $('.displayData').html(data);
                         console.log(data)

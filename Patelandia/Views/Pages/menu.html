@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+    <link rel="stylesheet" href="../../Styles/menu.css">
+    <link rel="stylesheet" href="../../Styles/header.css">
+</head>
+<body>
+    <main>
+        <section class="layoutc">
+    
+            <img src="../../Assets/mascote.png" title="mascote">
+    
+            <h1>CARDÁPIO</h1>
+    
+            <img src="../../Assets/mascote.png" title="mascote">
+    
+        </section>
+    
+        <div class="opção">
+    
+            <button type="button">
+                <h2>Salgados</h2>
+            </button>
+    
+            <button type="button">
+                <h2>Bebidas</h2>
+            </button>
+    
+            <button type="button">
+                <h2>Combos</h2>
+            </button>
+    
+        </div>
+    
+        <section class="cardapio">
+            <section class="cardapioc">
+                    <div class="produtoc">
+    
+                        <img src="Assets/<?php echo $row['img_file_name'] ?>">
+    
+                        <div class="textc">
+    
+                            <h1 class="nomedoproduto"><?php echo $row['item_name'] ?></h1>
+    
+                            <p class="descriçãoproduto"><?php echo $row['description'] ?></p>
+    
+                            <h3 class="price"><a href="../../order"></a></h3>
+    
+                        </div>
+                    </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

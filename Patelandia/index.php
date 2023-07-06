@@ -3,6 +3,7 @@
 // Session
 session_start();
 
+global $test;
 // ---------------------------------------------------------
 // Constants
 const INCLUDE_PATH = 'http://localhost:8080/Patelandia/';
@@ -28,6 +29,7 @@ const CATEGORIES = [
 // Imports
 require "Database.php";
 
+use Controllers\AtendimentoController;
 use Controllers\HomeController;
 use Controllers\LoginController;
 use Controllers\ProductRegisterController;
@@ -55,6 +57,7 @@ $stockController = new StockController();
 $myOrdersController = new MyOrdersController();
 $menuController = new MenuController();
 $orderController = new OrderController();
+$atendimentoController = new AtendimentoController();
 
 // ---------------------------------------------------------
 // Router
@@ -90,4 +93,8 @@ if (isset($_SESSION['position']) && $_SESSION['position'] == POSITIONS["ADMIN"])
     Helpers\Router :: get('/stock', function() use($stockController): void {
         $stockController -> execute();
     });
+
+    // Helpers\Router :: get('/sac', function() use($atendimentoController): void {
+    //     $atendimentoController -> execute();
+    // });
 }

@@ -1,10 +1,11 @@
 <?php
 
 namespace Models;
+use MySql;
 
 class OrderRegisterModel
 {
-    // private StockModel $stockModel;
+    private static StockModel $stockModel;
 
     // public function __construct(private DbConnectionI $pdo)
     // {
@@ -22,10 +23,16 @@ class OrderRegisterModel
                 array_push($dataArray, $data);
             }
 
-            return $dataArray;
+            $GLOBALS['data'] = $dataArray;
+            return $GLOBALS['data'];
         }
 
         return [];
+    }
+
+    public function TreatData() {
+        $GLOBALS['data'] = OrderRegisterModel::ReceiveData();
+        echo "traetData" . $GLOBALS['data'];
     }
 
     public function DisplayReceivedData(): array | string
@@ -85,4 +92,3 @@ class OrderRegisterModel
 }
 
 OrderRegisterModel::ReceiveData();
-

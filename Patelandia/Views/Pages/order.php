@@ -15,6 +15,17 @@ $menuModel = new MenuModel(new MySql);
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+
+    .choosen {
+        position: fixed;
+        right: 0;
+        width: 23%; 
+        height: 180vh;
+        z-index: -4;                                  
+        top: 12vh;
+        text-align: center;
+    }
+
 </style>
 
 <main id="mainpedir">
@@ -49,14 +60,8 @@ $menuModel = new MenuModel(new MySql);
                 <thead>
                     <th>Nome do produto</th>
                     <th>Quantidade</th>
-                    <th>Detalhes</th>
-                </thead>
-
-                <tr>
-                    <th>Quantidade</th>
-                    <th> </th>
                     <th>Preço</th>
-                </tr>
+                </thead>
 
                 <tr>
                     <td><button>-</button> 1 <button class="add-order">+</button></td>

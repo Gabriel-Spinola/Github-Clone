@@ -1,0 +1,27 @@
+.cardapioc {
+    /* width: 90vw; */
+    display: flex;
+    /* justify-content: space-around; */
+    max-width: 80vw;
+    margin-left: 9vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.opção {
+    position: absolute;
+    top: 33vh;
+}
+
+.produtoc {
+    /* display: flex; */
+    border: 2px solid white;
+    background-color: whitesmoke;
+    width: 20vw;
+    height: 38vh;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 1vh;
+    flex: 1;
+}
